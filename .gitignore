@@ -1,0 +1,116 @@
+# ========================================================
+# 🩺 Health App - React Native + Node.js + Supabase
+# ========================================================
+
+# -------------------------
+# Block everything by default
+# -------------------------
+*
+!.gitignore
+
+# -------------------------
+# Keep essential project files
+# -------------------------
+!package.json
+!package-lock.json
+!yarn.lock
+!README.md
+
+# -------------------------
+# Keep backend code (controllers & routes)
+# -------------------------
+!backend/controllers/
+!backend/routes/
+!backend/server.js
+
+# -------------------------
+# Keep frontend code (screens)
+# -------------------------
+!app/screens/
+!app/app.js
+
+# -------------------------
+# Ignore Node modules
+# -------------------------
+backend/node_modules/
+app/node_modules/
+
+# -------------------------
+# Ignore environment & secret files
+# -------------------------
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# -------------------------
+# Ignore build / output
+# -------------------------
+backend/build/
+backend/dist/
+app/web-build/
+tmp/
+temp/
+*.apk
+*.aab
+
+# -------------------------
+# Ignore OS / Editor files
+# -------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# -------------------------
+# React Native / Expo
+# -------------------------
+.expo/
+.expo-shared/
+.expo-dev/
+android/
+ios/
+
+# -------------------------
+# Logs
+# -------------------------
+*.log
+logs/
+debug.log
+
+# -------------------------
+# Supabase
+# -------------------------
+supabase/.temp/
+supabase/functions/.build/
+
+# -------------------------
+# Cache / Temporary files
+# -------------------------
+.cache/
+coverage/
+*.pid
+*.seed
+*.pid.lock
+
+# -------------------------
+# Widget / Platform-specific
+# -------------------------
+*.iml
+*.gradle/
+.gradle/
+*.keystore
+*.jks
+*.hprof
+
+# -------------------------
+# Misc
+# -------------------------
+*.tgz
+*.zip
+*.tar
+*.gz
+*.bak
+*.orig
