@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="health-app/app/assets/images/Logo.png" width="250" alt="Logo" />
+  <img src="health-app/app/assets/images/Logo.png" width="1000" alt="Logo" />
 </div>
 
 # 🩺 Health App
