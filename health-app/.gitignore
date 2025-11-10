@@ -1,71 +1,40 @@
 # ========================================================
-# 🩺 Health App - React Native + Node.js + Supabase
+# 🩺 Health App - Standard .gitignore
 # ========================================================
 
 # -------------------------
-# Block everything by default
-# -------------------------
-*
-!.gitignore
-
-# -------------------------
-# Keep essential project files
-# -------------------------
-!package.json
-!package-lock.json
-!yarn.lock
-!README.md
-
-# -------------------------
-# Keep backend code (controllers & routes)
-# -------------------------
-!backend/controllers/
-!backend/routes/
-!backend/server.js
-
-# -------------------------
-# Keep frontend code (screens)
-# -------------------------
-!app/screens/
-!app/app.js
-
-# -------------------------
-# Ignore Node modules
+# 1. Dependencies & Build Output
 # -------------------------
 backend/node_modules/
 app/node_modules/
+backend/build/
+backend/dist/
+app/web-build/
+tmp/
+temp/
+coverage/
+
+# Mobile Apps & Packages
+*.apk
+*.aab
+*.iml
+*.gradle/
+.gradle/
 
 # -------------------------
-# Ignore environment & secret files
+# 2. Environment & Secrets
 # -------------------------
 .env
 .env.local
 .env.development
 .env.production
 .env.test
+*.keystore
+*.jks
+*.hprof
 
 # -------------------------
-# Ignore build / output
-# -------------------------
-backend/build/
-backend/dist/
-app/web-build/
-tmp/
-temp/
-*.apk
-*.aab
-
-# -------------------------
-# Ignore OS / Editor files
-# -------------------------
-.DS_Store
-Thumbs.db
-.idea/
-.vscode/
-*.swp
-
-# -------------------------
-# React Native / Expo
+# 3. React Native / Expo Specific
 # -------------------------
 .expo/
 .expo-shared/
@@ -74,39 +43,33 @@ android/
 ios/
 
 # -------------------------
-# Logs
-# -------------------------
-*.log
-logs/
-debug.log
-
-# -------------------------
-# Supabase
+# 4. Supabase Specific
 # -------------------------
 supabase/.temp/
 supabase/functions/.build/
 
 # -------------------------
-# Cache / Temporary files
+# 5. Cache, Logs, and Temporary Files
 # -------------------------
 .cache/
-coverage/
+*.log
+logs/
+debug.log
 *.pid
 *.seed
 *.pid.lock
 
 # -------------------------
-# Widget / Platform-specific
+# 6. OS & Editor Files
 # -------------------------
-*.iml
-*.gradle/
-.gradle/
-*.keystore
-*.jks
-*.hprof
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
 
 # -------------------------
-# Misc
+# 7. Archive & Backup Files
 # -------------------------
 *.tgz
 *.zip
