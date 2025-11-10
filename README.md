@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="images/Logo.png" width="250" alt="Logo" />
+</div>
+
 # 🩺 Health App
 
 A mobile health tracking application built with **React Native**, **Node.js**, and **Supabase**.  
@@ -59,6 +63,8 @@ cd health-app
 cd backend
 npm install
 npm run dev
+npm install react-native-android-widget
+npx pod-install
 ```
 
 > Create a `.env` file:
@@ -121,4 +127,4 @@ npx expo start
 
 ## License
 This project is licensed under the **MIT License** — feel free to use and modify.  
-Made with by the **Docter Gentle Team**
+Made with by the **Docter Gentleman Team**

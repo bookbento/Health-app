@@ -1,0 +1,97 @@
+# ========================================================
+# 🩺 Health App - React Native + Node.js + Supabase
+# ========================================================
+
+# =========================
+# Node & General
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.pnpm-debug.log*
+
+# =========================
+# Build & Output
+# =========================
+build/
+dist/
+.tmp/
+temp/
+
+# =========================
+# Environment & Secrets
+# =========================
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# =========================
+# OS / Editor Files
+# =========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# =========================
+# React Native / Expo
+# =========================
+.expo/
+.expo-shared/
+.expo-dev/
+android/
+ios/
+web-build/
+*.apk
+*.aab
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+debug.log
+
+# =========================
+# Supabase
+# =========================
+supabase/.temp/
+supabase/functions/.build/
+
+# =========================
+# Cache / Temporary Files
+# =========================
+.cache/
+coverage/
+*.pid
+*.seed
+*.pid.lock
+
+# =========================
+# Widget / Platform-specific
+# =========================
+*.iml
+*.gradle/
+.gradle/
+*.keystore
+*.jks
+*.hprof
+
+# =========================
+# Misc
+# =========================
+*.tgz
+*.zip
+*.tar
+*.gz
+*.bak
+*.orig
+
+# ========================================================
+# End of .gitignore
+# ========================================================
