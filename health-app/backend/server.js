@@ -1,23 +1,21 @@
-// backend/server.js
-const express = require('express');
-const cors = require('cors');
-require('dotenv').config();
+import express from 'express';
+import cors from 'cors';
+import dotenv from 'dotenv';
 
+import authRoutes from './routes/auth.js';
+import moodRoutes from './routes/mood.js';
+import recommendationRoutes from './routes/recommendations.js';
+import statsRoutes from './routes/stats.js';
+
+dotenv.config();
 const app = express();
-const port = process.env.PORT || 4000;
-
-// Middleware
 app.use(cors());
-app.use(express.json()); // parse JSON body
+app.use(express.json());
 
-// Routes
-const userRoutes = require('./routes/users');
-const healthDataRoutes = require('./routes/healthData');
+app.use('/api/auth', authRoutes);
+app.use('/api/mood', moodRoutes);
+app.use('/api/recommendations', recommendationRoutes);
+app.use('/api/stats', statsRoutes);
 
-app.use('/api/users', userRoutes);
-app.use('/api/health-data', healthDataRoutes);
-
-// Start server
-app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
-});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
