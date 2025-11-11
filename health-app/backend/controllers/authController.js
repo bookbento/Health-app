@@ -4,6 +4,11 @@ import { supabase } from '../config/db.js';
 
 export const register = async (req, res) => {
   const { name, email, password } = req.body;
+
+  if (!email.endsWith('@cmu.ac.th')) {
+  return res.status(400).json({ error: "ต้องใช้ email ของ CMU เท่านั้น" });
+}
+
   const hash = await bcrypt.hash(password, 10);
 
   const { error } = await supabase.from('users').insert([{ name, email, password_hash: hash }]);
